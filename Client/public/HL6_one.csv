@@ -1,0 +1,342 @@
+﻿CitationNumber,Drug,Analyte,CAS,Species,LambdaZHl
+9018309,3-Methylindole,3-Methylindole,83-34-1,Goats,17.9
+9016661,3-Methyl-methcathinone,3-Methyl-methcathinone,1246816-62-5,Swine,0.83
+9016661,3-Methyl-methcathinone,mephedrone,1189805-46-6,Swine,0.4
+9015560,Abamectin,Abamectin,56180-94-0,Sheep,5.7
+9015043,Acetaminophen,Acetaminophen,103-90-2,Chickens,0.61
+9015043,Acetaminophen,Acetaminophen,103-90-2,Turkeys,0.67
+9016402,Acetaminophen,Acetaminophen,103-90-2,Swine,5.14
+9016769,Acetaminophen,Acetaminophen,103-90-2,Goats,1.06
+9014783,Acetylsalicylic acid,Acetylsalicylic acid,50-78-2,Cattle,0.608455
+9015908,Acetylsalicylic acid,Acetylsalicylic acid,50-78-2,Chickens,0.25
+9015908,Acetylsalicylic acid,Acetylsalicylic acid,50-78-2,Turkeys,0.2
+9015691,Albendazole,Albendazole,54965-21-8,Chickens,3.47
+9015691,Albendazole,Albendazole (sulfoxide metabolite),54029-12-8,Chickens,6.36
+9015691,Albendazole,Albendazole (sulfone metabolite),75184-71-3,Chickens,5.4
+9016636,Albendazole Sulfoxide,Albendazole Sulfoxide,54029-12-8,Sheep,6.57
+9016636,Albendazole Sulfoxide,Albendazole Sulfoxide (sulfone metabolite),75184-71-3,Sheep,11.43
+9016636,Albendazole Sulfoxide,Albendazole oxide (- enantiomer),1610590-72-1,Sheep,3.98
+9016636,Albendazole Sulfoxide,Albendazole oxide (+ enantiomer),1610590-71-0,Sheep,9.36
+9016636,Albendazole Sulfoxide,Albendazole Sulfoxide,54029-12-8,Goats,5.43
+9016636,Albendazole Sulfoxide,Albendazole Sulfoxide (sulfone metabolite),75184-71-3,Goats,3.53
+9016636,Albendazole Sulfoxide,Albendazole oxide (- enantiomer),1610590-72-1,Goats,3.66
+9016636,Albendazole Sulfoxide,Albendazole oxide (+ enantiomer),1610590-71-0,Goats,8.03
+9017774,Aminophylline,Aminophylline,317-34-0,Chickens,13.1
+9007426,Amoxicillin,Clavulanic acid,58001-44-8,Turkeys,1.12
+9007426,Amoxicillin,Clavulanic acid,58001-44-8,Chickens,0.98
+9016876,Amoxicillin,Amoxicillin,26787-78-0,Sheep,1.410615
+9018728,Amoxicillin,Amoxicillin,26787-78-0,Swine,2.04
+9007764,Amoxicillin sodium,Amoxicillin,26787-78-0,Goats,1.12
+9017579,Amoxicillin sodium,Amoxicillin,26787-78-0,Turkeys,1.28
+9017245,amoxicillin trihydrate,Amoxicillin,26787-78-0,Chickens,61.79
+9018860,Apomorphine,Apomorphine,58-00-4,Swine,0.355071
+9018849,Articaine hydrochloride,Articaine hydrochloride,23964-57-0,Goats,0.66
+9015440,Avilamycin,Avilamycin,11051-71-1,Chickens,5.17
+9014297,Azithromycin,Azithromycin,83905-01-5,Sheep,192.1
+9016716,Bisphenol A,Bisphenol A,80-05-7,Sheep,0.3
+9016635,Buprenorphine,Buprenorphine,52485-79-7,Swine,2.4
+9019045,Buprenorphine,Buprenorphine,52485-79-7,Sheep,1.75
+9017433,Butafosfan,Butafosfan,17316-67-5,Swine,3.3
+9015272,Butorphanol tartrate,Butorphanol tartrate,58786-99-5,Chickens,1.19
+9015242,Caffeine,Caffeine,58-08-2,Sheep,15.74
+9015242,Caffeine,Caffeine (paraxanthine metabolite),611-59-6,Sheep,30.11
+9015242,Caffeine,Caffeine (theobromine metabolite),83-67-0,Sheep,32.81
+9015242,Caffeine,Caffeine (theophylline metabolite),58-55-9,Sheep,15.75
+9017142,Caffeine,Caffeine,58-08-2,Swine,11
+9018415,Carbetocin,Carbetocin,37025-55-1,Cattle,0.43
+9018834,carprofen,carprofen,53716-49-7,Swine,305.1
+9019193,carprofen,carprofen,53716-49-7,Sheep,59.51
+9014842,Cefacetrile,Cefacetrile,10206-21-0,Cattle,1.3
+9014842,Cefacetrile,Cefacetrile,10206-21-0,Sheep,1.3
+9018366,Cefonicid,Cefonicid,61270-58-4,Goats,0.22
+9016194,Cefoperazone,Cefoperazone,62893-19-0,Sheep,3.8
+9016818,Cefquinome,Cefquinome,84957-30-2,Goats,5.95
+9018342,Cefquinome,Cefquinome,84957-30-2,Sheep,7.46
+9018344,Cefquinome,Cefquinome,84957-30-2,Cattle,1.85
+9018356,Cefquinome,Cefquinome,84957-30-2,Chickens,1.194
+9019060,Cefquinome,Cefquinome,84957-30-2,Turkeys,1.56
+9017663,Ceftiofur hydrochloride,Ceftiofur (desfuroylceftiofur metabolite),120882-22-6,Cattle,7.45
+9000629,Ceftiofur sodium,Ceftiofur,80370-57-6,Sheep,5.833333345
+9019219,Ceftiofur sodium,Ceftiofur,80370-57-6,Chickens,3.19
+9016994,Ceftriaxone,Ceftriaxone,73384-59-5,Goats,0.21
+9018344,Ceftriaxone,Ceftriaxone,73384-59-5,Cattle,3.31
+9019033,Ceftriaxone,Ceftriaxone,73384-59-5,Sheep,2.18
+9016209,Cefuroxime,Cefuroxime,55268-75-2,Swine,1.110222
+9011973,Chloramphenicol,Chloramphenicol,56-75-7,Turkeys,1.47
+9014825,Chlorpheniramine,Chlorpheniramine,132-22-9,Cattle,2.11
+8005099,Chlortetracycline,Chlortetracycline hydrochloride,64-72-2,Swine,3.458308
+9015767,Chlortetracycline,Chlortetracycline,57-62-5,Chickens,0.580116
+9018766,Chlortetracycline hydrochloride,Chlortetracycline,57-62-5,Swine,27.79
+9006776,Ciprofloxacin,Ciprofloxacin,85721-33-1,Chickens,3.11
+9007764,Clavulanic acid,Clavulanic acid,58001-44-8,Goats,0.87
+9018728,Clavulanic acid,Clavulanic acid,58001-44-8,Swine,1.65
+9017871,Colistimethate sodium,Colistin,1066-17-7,Swine,10.5
+9015741,Cyadox,Cyadox,65884-46-0,Swine,0.93
+9017033,Cyanocobalamin,Cyanocobalamin,68-19-9,Swine,0.43
+9015998,Cyclosporine,Cyclosporine,59865-13-3,Swine,2.85
+9016286,Danofloxacin,Danofloxacin,112398-08-0,Sheep,3.39
+9006898,Danofloxacin,Danofloxacin,112398-08-0,Chickens,6.73
+9015543,Danofloxacin,Danofloxacin,112398-08-0,Cattle,4.4
+9018905,Danofloxacin,Danofloxacin,112398-08-0,Goats,10.09
+9016385,Deoxynivalenol,Deoxynivalenol,51481-10-8,Chickens,0.465093
+9015560,Derquantel,Derquantel,187865-22-1,Sheep,5.7
+9016266,Detomidine,Detomidine,76631-46-4,Cattle,1.34
+9017556,Diaveridine,Diaveridine,5355-16-8,Swine,0.7
+9017556,Diaveridine,Diaveridine,5355-16-8,Chickens,3.4
+9015438,Diclofenac,Diclofenac,15307-86-5,Goats,3.1
+9016992,Dicobalt edetate,Dicobalt edetate,36499-65-7,Swine,2.26712
+9015199,Difloxacin,Difloxacin,98106-17-3,Goats,5.23
+9017733,Diflubenzuron,Diflubenzuron,35367-38-5,Chickens,14.7
+9015790,Doramectin,Doramectin,117704-25-3,Cattle,89
+9015144,Doxapram,Doxapram,309-29-5,Sheep,11.6
+9015144,Doxapram (keto-doxapram metabolite),Doxapram (keto-doxapram metabolite),42595-88-0,Sheep,3.4
+9016212,Doxorubicin,Doxorubicin (doxorubicinol metabolite),54193-28-1,Swine,18.337
+9016453,Doxorubicin,Doxorubicin,23214-92-8,Swine,37.1
+9016960,Doxycycline,Doxycycline,564-25-0,Swine,6.5
+9017175,Doxycycline,Doxycycline,564-25-0,Chickens,6.51
+9018664,Doxycycline hyclate,Doxycycline,24390-14-5,Goats,4.39
+9015141,Enilconazole,Enilconazole,35554-44-0,Cattle,11
+9013482,Enrofloxacin,Enrofloxacin,93106-60-6,Goats,8.2
+9016287,Enrofloxacin,Enrofloxacin,93106-60-6,Sheep,8.11
+9017309,Enrofloxacin,Enrofloxacin,93106-60-6,Swine,21.71
+9017311,Enrofloxacin,Enrofloxacin,93106-60-6,Chickens,15.84
+9017678,Enrofloxacin,Ciprofloxacin,85721-33-1,Sheep,9.5
+9018352,Enrofloxacin,Enrofloxacin,93106-60-6,Turkeys,7.24
+9018653,Enrofloxacin,Enrofloxacin,93106-60-6,Cattle,2.77
+9018653,Enrofloxacin,Ciprofloxacin,85721-33-1,Cattle,3.6
+9018653,Enrofloxacin,Enrofloxacin,93106-60-6,Cattle,6.36
+9019319,Enrofloxacin,Ciprofloxacin,85721-33-1,Chickens,24.5
+9009990,Enrofloxacin (ciprofloxacin metabolite),Enrofloxacin (ciprofloxacin metabolite),85721-33-1,Goats,1.93
+9018430,Epinephrine,Epinephrine,51-43-4,Swine,0.0326
+9018326,Ergometrine,Ertapenem,60-79-7,Sheep,0.85
+9018326,Ertapenem,Ertapenem,153832-46-3,Sheep,1.09
+9014297,Erythromycin,Erythromycin,114-07-8,Sheep,3.1
+9018221,Estradiol-17B,Estradiol-17B,50-28-2,Sheep,2.22
+9018221,Estradiol-17B,Progesterone,57-83-0,Sheep,2.75
+9017921,Famotidine,Famotidine,76824-35-6,Cattle,3.33
+9009983,Febantel,Febantel (fenbendazole metabolite),43210-67-9,Sheep,21.0746
+8005103,Fenbendazole,Febantel (sulfoxide metabolite),53716-50-0,Goats,8.8
+8005103,Fenbendazole,Febantel (sulfone metabolite),54029-20-8,Goats,22.14
+8005103,Fenbendazole,Fenbendazole,43210-67-9,Goats,5.6
+9013145,Fenbendazole,Fenbendazole (amine metabolite),53065-28-4,Goats,7.4696
+9016153,Fenbendazole,Fenbendazole,43210-67-9,Swine,13.7
+9017166,Fentanyl,Fentanyl,437-38-7,Chickens,44.2
+9017902,Fentanyl citrate,Fentanyl citrate,990-73-8,Cattle,12.7
+9017902,Fentanyl citrate,Fentanyl (N-[1-(2-phenethyl-4piperidinyl)maloanilinic acid metabolite),1609-66-1,Cattle,3.6
+9016333,Fexofenadine,Fexofenadine,83799-24-0,Swine,2.1
+9015252,Finasteride,Finasteride,98319-26-7,Swine,3.4
+9018329,Firocoxib,Firocoxib,189954-96-9,Goats,26.41
+9018694,Firocoxib,Firocoxib,189954-96-9,Swine,16.61
+9018179,Flecainide,Flecainide,54143-55-4,Swine,0.38
+9014851,Florfenicol,Florfenicol,73231-34-2,Cattle,2.85
+9014851,Florfenicol,Florfenicol,73231-34-2,Goats,2.61
+9015178,Florfenicol,Florfenicol (florfenicol amine metabolite),76639-93-5,Sheep,17.3
+9016322,Florfenicol,Florfenicol,73231-34-2,Sheep,16.9
+9016363,Florfenicol,Florfenicol (florfenicol amine metabolite),76639-93-5,Chickens,1.91
+9017767,Florfenicol,Florfenicol,73231-34-2,Swine,2.55
+9017828,Florfenicol,Florfenicol,73231-34-2,Chickens,5.36
+9019062,Florfenicol,Florfenicol,73231-34-2,Turkeys,3.22
+9007409,Flunixin,Ketoprofen (R- enantiomer),56105-81-8,Cattle,0.42
+9007409,Flunixin,Ketoprofen (S+ enantiomer),22161-81-5,Cattle,0.42
+9009256,Flunixin,Flunixin,38677-85-9,Chickens,5.5
+9016755,Flunixin,Flunixin,38677-85-9,Cattle,11.6
+9018160,Flunixin,Flunixin,38677-85-9,Swine,9.76
+9007611,Flunixin meglumine,Flunixin,38677-85-9,Sheep,2.330146
+9008403,Flunixin meglumine,Flunixin meglumine,42461-84-7,Cattle,5.7
+9016153,Flunixin meglumine,Flunixin meglumine,42461-84-7,Swine,8.03
+9017172,Flunixin meglumine,Flunixin meglumine,42461-84-7,Chickens,5.52
+9017172,Flunixin meglumine,Flunixin meglumine,42461-84-7,Turkeys,0.54
+9017280,Flunixin meglumine,Flunixin (5-hydroxy flunixin metabolite),75369-61-8,Cattle,31.79
+9018075,Flunixin meglumine,Flunixin meglumine,42461-84-7,Goats,6.032
+9018749,Flunixin meglumine,Flunixin (5-hydroxy flunixin metabolite),75369-61-8,Goats,4.18
+9018749,Flunixin meglumine,Flunixin,38677-85-9,Goats,4.56
+9016003,Fosfomycin disodium,Fosfomycin,26016-99-9,Swine,1.54
+9018924,Furosemide,Furosemide,54-31-9,Sheep,0.79
+9019024,Furosemide,Furosemide,54-31-9,Goats,0.71
+9017490,Gamithromycin,Gamithromycin,145435-72-9,Sheep,34.6
+9018859,Gamithromycin,Gamithromycin,145435-72-9,Swine,76.1
+9015822,Gentamicin,Gentamicin,1403-66-3,Chickens,11.52
+9015218,Halofuginone,Halofuginone,55837-20-2,Cattle,11.66
+9016992,HI-6,HI-6,34433-31-3,Swine,0.973528
+9015221,Hydrochlorothiazide,Hydrochlorothiazide,58-93-5,Cattle,5
+9017033,Hydroxocobalamin hydrochloride,Hydroxocobalamin hydrochloride,58288-50-9,Swine,0.42
+9012163,Ibafloxacin,Ibafloxacin,91618-36-9,Goats,3.76
+9018185,Ibuprofen,Ibuprofen (carboxyibuprofen metabolite),15935-54-3,Swine,2.3
+9018185,Ibuprofen,Ibuprofen (2-hydroxyibuprofen metabolite),51146-55-5,Swine,2.3
+9018185,Ibuprofen,Ibuprofen,15687-27-1,Swine,3.9
+9015855,Irinotecan,Irinotecan,97682-44-5,Swine,6.3
+9015855,Irinotecan,SN-38 (Irinotecan Metabolite),86639-52-3,Swine,2.2
+9012449,Ivermectin,Ivermectin,70288-86-7,Goats,278.4
+9015790,Ivermectin,Ivermectin,70288-86-7,Cattle,64.5
+9016778,Ivermectin,Ivermectin,70288-86-7,Chickens,41.52
+9017876,Ivermectin,Ivermectin,70288-86-7,Sheep,68.4
+9015296,Ketoprofen,Ketoprofen (R- enantiomer),56105-81-8,Chickens,0.16
+9015296,Ketoprofen,Ketoprofen (S+ enantiomer),22161-81-5,Chickens,0.22
+9015296,Ketoprofen,Ketoprofen (R- enantiomer),56105-81-8,Turkeys,0.21
+9015296,Ketoprofen,Ketoprofen (S+ enantiomer),22161-81-5,Turkeys,0.17
+9015296,Ketoprofen,Ketoprofen (R- enantiomer),56105-81-8,Swine,0.39
+9015296,Ketoprofen,Ketoprofen (S+ enantiomer),22161-81-5,Swine,2.53
+9018354,Ketoprofen,Ketoprofen,22071-15-4,Goats,5.17
+9017482,Lactose,Lactose,5965-66-2,Cattle,83.52
+9019036,Letrozole,Letrozole,112809-51-5,Sheep,9.94
+9016201,Levofloxacin,Levofloxacin,100986-85-4,Turkeys,4.49
+9017590,Levofloxacin,Levofloxacin,100986-85-4,Chickens,6.93
+9018416,Levofloxacin,Levofloxacin,100986-85-4,Sheep,4.06
+9018796,Levofloxacin,Levofloxacin,100986-85-4,Goats,4.56
+9018324,Levosulpiride,Levosulpiride,23672-07-3,Sheep,1.8
+9014801,Lidocaine,Lidocaine,137-58-6,Cattle,1.06
+9017964,Lidocaine,Lidocaine,137-58-6,Goats,1.71
+9017964,Lidocaine,Lidocaine (monoethylglycinexylidide metabolite),7728-40-7,Goats,3.22
+9015374,Lincomycin,Lincomycin,154-21-2,Swine,2
+9015682,Lincomycin,Spectinomycin,1695-77-8,Cattle,2
+9016391,Marbofloxacin,Marbofloxacin,115550-35-1,Swine,18.4
+9017667,Marbofloxacin,Marbofloxacin,115550-35-1,Chickens,6.5
+9017760,Marbofloxacin,Marbofloxacin,115550-35-1,Sheep,11.48
+9017852,Marbofloxacin,Marbofloxacin,115550-35-1,Cattle,10.16
+9018034,Marbofloxacin,Marbofloxacin,115550-35-1,Goats,5.11
+9015300,Medetomidine,Ketamine,6740-88-1,Sheep,0.1
+9017303,Medetomidine,Medetomidine,86347-14-0,Sheep,3.94
+9007720,Meloxicam,Meloxicam,71125-38-7,Swine,121
+9013939,Meloxicam,Meloxicam,71125-38-7,Cattle,20.35
+9017172,Meloxicam,Meloxicam,71125-38-7,Turkeys,0.99
+9018617,Meloxicam,Meloxicam,71125-38-7,Goats,15.77
+9019197,Meloxicam,Meloxicam,71125-38-7,Chickens,5.45
+9019266,Menbutone,Menbutone,3562-99-0,Sheep,6.08
+9015294,Mequindox,Mequindox,13297-17-1,Swine,0.84
+9015325,Mequindox,Mequindox,13297-17-1,Chickens,0.15
+9016809,Metamizole,Metamizole,50567-35-6,Sheep,3.01
+9017957,Metamizole,Metamizole,50567-35-6,Goats,0.72
+9017957,Metamizole,4-Amino-antipyrine,83-07-8,Goats,3.91
+9018473,Metarrestin,Metarrestin,1443414-10-5,Swine,137.2
+9018846,Methadone,Methadone,76-99-3,Chickens,2.950000006
+9016580,Metoclopramide,Metoclopramide,364-62-5,Cattle,9.6
+9017142,Metoprolol tartrate,Metoprolol tartrate,37350-58-6,Swine,1.4
+9017223,Metronidazole,Metronidazole,443-48-1,Turkeys,5.94
+9017223,Metronidazole,Metronidazole (hydroxymetronidazole metabolite),4812-40-2,Turkeys,8.08
+9017142,Midazolam,Midazolam,59467-70-8,Swine,1.2
+9017534,Midazolam,Midazolam (1-hydroxymethyl metabolite),59468-90-5,Sheep,0.68
+9018950,Minocycline,Minocycline,10118-90-8,Swine,7.7
+9014586,Monensin,Monensin,17090-79-8,Turkeys,1.36
+9018388,Morphine,Morphine,57-27-2,Cattle,4.1
+9018388,Morphine,Lidocaine (3-hydroxy metabolite),34604-55-2,Cattle,3.1
+9018388,Morphine,Lidocaine (4-hydroxylidocaine metabolite),39942-41-1,Cattle,2.6
+9018388,Morphine,Lidocaine (monoethylglycinexylidide metabolite),7728-40-7,Cattle,0.97
+9018388,Morphine,Ketamine,6740-88-1,Cattle,1.55
+9018388,Morphine,Ketamine (norketamine metabolite),35211-10-0,Cattle,2.2
+9018388,Morphine,Ketamine (dehydronorketamine metabolite),57683-62-2,Cattle,3.2
+9015790,Moxidectin,Moxidectin,113507-06-5,Cattle,71.3
+9018032,Moxidectin,Moxidectin,113507-06-5,Swine,246.96
+9017385,Moxifloxacin,Moxifloxacin,151096-09-2,Sheep,12.13
+9012340,Moxifloxacin,Moxifloxacin,151096-09-2,Goats,1.94
+9015190,Moxifloxacin,Moxifloxacin,151096-09-2,Cattle,3.29
+9016085,Nalbuphine,Nalbuphine,20594-83-6,Cattle,0.682
+9015206,Naltrexone,Naltrexone,16590-41-3,Swine,3.07
+9016100,Naltrexone hydrochloride,Naltrexone hydrochloride,16676-29-2,Swine,24.8
+9018968,Neomycin sulfate,Neomycin sulfate,1405-10-3,Swine,5.87
+9015417,Norgestomet,Norgestomet,25092-41-5,Cattle,124.8
+9015422,Novobiocin,Novobiocin,303-81-1,Cattle,1.5
+9017142,Omeprazole,Omeprazole,73590-58-6,Swine,0.6
+9012479,Orbifloxacin,Orbifloxacin,113617-63-3,Goats,4.12
+9015645,Orbifloxacin,Orbifloxacin,113617-63-3,Sheep,8.31
+9011212,Oxfendazole,Oxfendazole,53716-50-0,Sheep,20
+9011212,Oxfendazole,Oxfendazole (fenbendazole sulfone metabolite),54029-20-8,Sheep,31
+9015674,Oxfendazole,Oxfendazole,53716-50-0,Cattle,20
+9017859,Oxytetracycline,Oxytetracycline,79-57-2,Goats,10.84
+9015045,Oxytetracycline,Oxytetracycline,79-57-2,Sheep,10.88
+8004005,Oxytetracycline hydrochloride,Oxytetracycline,79-57-2,Cattle,13.5
+9016984,Oxytetracycline hydrochloride,Oxytetracycline,79-57-2,Chickens,27.41
+9015346,PAC-14028,PAC-14028,1005168-10-4,Swine,3.8
+9018835,Pantoprazole,Pantoprazole,102625-70-7,Cattle,2.81
+9015518,Paromomycin,Paromomycin,7542-37-2,Cattle,5
+9004644,Penicillin G,Penicillin G,61-33-6,Goats,0.616666668
+9018784,Penicillin g benzathine,Penicillin g benzathine,41372-02-5,Swine,1.54
+9015523,Penicillin G potassium,Penicillin G potassium,113-98-4,Chickens,0.58
+9018671,Phenobarbital,Phenobarbital,50-06-6,Goats,4
+9017745,Pidotimod,Pidotimod,121808-62-6,Chickens,1.73
+9018400,Pirfenidone,Pirfenidone,53179-13-8,Sheep,0.84
+9015999,Propofol,Propofol,2078-54-8,Swine,1.95
+9016274,Propofol,Propofol,2078-54-8,Sheep,1.23
+9000642,Quinidine,Quinidine,56-54-2,Goats,0.85
+9000642,Quinidine,Quinidine,56-54-2,Swine,5.42
+9015276,Quinocetone,Quinocetone,81810-66-4,Swine,2.24
+9018763,Reltecimod,Reltecimod,1447799-33-8,Swine,0.136666667
+9015305,Repaglinide,Repaglinide,135062-02-1,Swine,1.23358
+9016104,Rifampin,Rifampin,13292-46-1,Cattle,3.56
+9019253,Robenacoxib,Robenacoxib,220991-32-2,Sheep,2.64
+9009256,Salicylate,Salicylate,63-36-5,Chickens,4
+9014786,Salicylic acid,Salicylic acid,69-72-7,Cattle,3.68
+9014586,Salinomycin,Salinomycin,53003-10-4,Chickens,1.79
+9018070,Sanguinarine,Sanguinarine,2447-54-3,Chickens,0.34
+9018070,Sanguinarine,dihydrosanguinarine,3606-45-9,Chickens,1.12
+9018070,Sanguinarine,Chelerythine,34316-15-9,Chickens,1.15
+9018828,Sialyllactose,Sialyllactose,35890-38-1,Swine,1.2
+9016846,Sisapronil,Sisapronil,856225-89-3,Cattle,456
+9016042,Solithromycin,Solithromycin,760981-83-7,Sheep,21.5
+9019034,Spiramycin,Spiramycin,8025-81-8,Chickens,3.97
+9015612,Streptomycin,Spectinomycin,57-92-1,Cattle,1.2
+9015717,Sulfacetamide,Sulfacetamide,144-80-9,Cattle,1.86
+9001253,Sulfadiazine,Sulfadiazine,68-35-9,Sheep,3.8
+9001253,Sulfadiazine,Sulfadiazine,68-35-9,Cattle,2.8
+8005204,sulfadimethoxine,sulfadimethoxine,122-11-2,Chickens,9.6
+9000778,sulfadimethoxine,sulfadimethoxine,122-11-2,Goats,8.58
+9007155,Sulfadoxine,Sulfadoxine,2447-57-6,Sheep,15.33333336
+9009467,Sulfadoxine,Sulfadoxine,2447-57-6,Goats,6.44
+9012965,Sulfamerazine,Sulfamerazine,127-79-7,Sheep,6
+9000778,Sulfameter,Sulfameter,651-06-9,Goats,4.26
+9000778,Sulfamethazine,Meloxicam,71125-38-7,Goats,8.4
+9000778,Sulfamethazine,Sulfamethazine,57-68-1,Goats,9.55
+9008125,Sulfamethazine,Sulfamethazine,57-68-1,Sheep,5.1
+9008125,Sulfamethazine,Sulfamethazine,57-68-1,Swine,16.7
+9017001,Sulfamethazine,Sulfamethazine,57-68-1,Cattle,7.46
+9016153,Sulfamethazine sodium,Sulfamethazine sodium,1981-58-4,Swine,16.9
+9000778,Sulfamonomethoxine,Sulfamonomethoxine,1220-83-3,Goats,1.25
+9009467,Sulfamoxole,Sulfamoxole,729-99-7,Goats,5.2
+9000778,Sulfanilamide,Sulfanilamide,63-74-1,Goats,7.73
+9016540,Sulfaquinoxaline,Sulfaquinoxaline,59-40-5,Chickens,15.52
+9000939,Sulfathiazole,Sulfathiazole,72-14-0,Sheep,1.1
+9015717,Sulfathiazole,Sulfathiazole,72-14-0,Cattle,1.69
+9009467,Sulfisomidine,Sulfisomidine,515-64-0,Goats,2.13
+9000778,Sulfisoxazole,Sulfisoxazole,127-69-5,Goats,1.57
+9016477,T-2 toxin,T-2 toxin,21259-20-1,Chickens,0.288891
+9016477,T-2 toxin,T-2 toxin (HT-2 toxin metabolite),26934-87-2,Chickens,0.560445
+9016477,T-2 toxin,T-2 toxin (T-2 triol metabolite),34114-98-2,Chickens,0.160032
+9017872,Tapentadol,Tapentadol,175591-23-8,Chickens,0.94
+8005099,Tetracycline,Tetracycline,60-54-8,Swine,4.95
+9014657,Tetrahydrocannabinol,Tetrahydrocannabinol,1972-08-3,Swine,2.93
+9014657,Tetrahydrocannabinol,Celecoxib,169590-42-5,Swine,4.78
+9017217,Thalidomide,Thalidomide,50-35-1,Sheep,6.9
+9011973,Thiamphenicol,Thiamphenicol,15318-45-3,Turkeys,1.71
+9015627,Thiamphenicol,Thiamphenicol,15318-45-3,Swine,4.64
+9015702,Thiamphenicol,Thiamphenicol (glucuronide metabolite),401-10-5,Swine,6.83
+9015621,Thiamylal,Thiamylal,77-27-0,Sheep,1.86704
+9015623,Thiopental sodium,Thiopental,76-75-5,Sheep,4.20084
+9018340,Thymoquinone,Thymoquinone,490-91-5,Chickens,0.0978
+9018397,Tildipirosin,Tildipirosin,328898-40-4,Swine,99.42
+9018429,Tildipirosin,Tildipirosin,328898-40-4,Goats,77.89
+9018782,Tildipirosin,Tildipirosin,328898-40-4,Sheep,119.6
+9018887,Tildipirosin,Tildipirosin,328898-40-4,Chickens,60.61
+9017468,Tocopherol,Tocopherol dl-alpha-tocopheryl acetate,2074-53-5,Swine,5.9
+9018691,Tolfenamic acid,Tolfenamic acid,13710-19-5,Goats,2.13
+9016711,Tramadol,Tramadol,27203-92-5,Sheep,0.99
+9017815,Tramadol,Tramadol (M1 metabolite),144830-14-8,Sheep,5.77
+9014113,Triclabendazole,Triclabendazole (sulfoxide metabolite),100648-13-3,Sheep,14
+9014113,Triclabendazole,Triclabendazole (sulfone metabolite),106791-37-1,Sheep,27
+9014113,Triclabendazole (sulfoxide metabolite),Triclabendazole (sulfone metabolite),106791-37-1,Cattle,46.33
+9014113,Triclabendazole (sulfoxide metabolite),Triclabendazole (sulfoxide metabolite),100648-13-3,Cattle,23.67
+9007155,Trimethoprim,Trimethoprim,738-70-5,Sheep,2.500000005
+9016465,Trovafloxacin,Trovafloxacin,147059-72-1,Sheep,3.67
+9016662,Tulathromycin,Tulathromycin,217500-96-4,Chickens,21.65
+9017888,Tulathromycin,Tulathromycin,217500-96-4,Swine,69.4
+9015687,Tylosin,Tylosin,1401-69-0,Cattle,12.7
+9019141,Tylosin,Tylosin D,1404-48-4,Turkeys,0.66
+9018662,Tylosin tartrate,Tylosin A,1401-69-0,Turkeys,2.96
+9016644,Valnemulin,Valnemulin,101312-92-9,Swine,2.1
+9017519,Valnemulin,Valnemulin,101312-92-9,Chickens,1.85
+9017142,Varfarin,Varfarin,81-81-2,Swine,17
+9016135,Vigabatrin,Vigabatrin,60643-86-9,Swine,2.1
+9015635,Vincamine,Vincamine,1617-90-9,Cattle,2.39
+9016147,Voriconazole,Voriconazole,137234-62-9,Chickens,1.99
+9016385,Zearalenone,Zearalenone,17924-92-4,Chickens,0.530106
+9017540,Zearalenone,Zearalenone,17924-92-4,Swine,15
+9018166,Zolmitriptan,Zolmitriptan,139264-17-8,Swine,4
+9001253,Trimethoprim,Trimethoprim,738-70-5,Cattle,1.09
