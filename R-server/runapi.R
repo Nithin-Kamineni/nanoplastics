@@ -1,8 +1,7 @@
 library(plumber)
 #setwd(dir = here::here())
-# script_dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 # Set the working directory to the script's directory
-# setwd(script_dir)
+# setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
 
 r <- plumber::plumb(file = 'R-api.R')

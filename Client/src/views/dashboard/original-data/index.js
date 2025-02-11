@@ -122,16 +122,6 @@ function EnhancedTableHead({ onSelectAllClick, order, orderBy, numSelected, rowC
     return (
         <TableHead>
             <TableRow>
-            <LineChart
-      xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
-      series={[
-        {
-          data: [2, 5.5, 2, 8.5, 1.5, 5],
-        },
-      ]}
-      width={500}
-      height={300}
-    />
                 {/* <TableCell padding="checkbox" sx={{ pl: 3 }}>
                     <Checkbox
                         color="primary"

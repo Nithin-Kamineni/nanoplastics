@@ -22,6 +22,15 @@ import { predictHalfLife, resetPredictionData } from 'store/slices/fileinputpred
 import Alert from '@mui/material/Alert';
 import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
+import {
+    ChakraProvider,
+    NumberInput,
+    NumberInputField,
+    NumberInputStepper,
+    NumberIncrementStepper,
+    NumberDecrementStepper,
+    Select
+} from '@chakra-ui/react';
 
 // ==============================|| SAMPLE PAGE ||============================== //
 
@@ -198,143 +207,146 @@ const FileInputPage = () => {
     };
 
     return (
-        <MainCard title="Model Prediction">
-            <Collapse in={!!alertMessage}>
-                <Alert
-                    severity="error"
-                    sx={{ mb: 2, mt: 2 }}
-                    action={
-                        <IconButton aria-label="close" color="inherit" size="small" onClick={() => setAlertMessage('')}>
-                            <CloseIcon fontSize="inherit" />
-                        </IconButton>
-                    }
+        <ChakraProvider>
+            <MainCard title="Model Prediction">
+                <Collapse in={!!alertMessage}>
+                    <Alert
+                        severity="error"
+                        sx={{ mb: 2, mt: 2 }}
+                        action={
+                            <IconButton aria-label="close" color="inherit" size="small" onClick={() => setAlertMessage('')}>
+                                <CloseIcon fontSize="inherit" />
+                            </IconButton>
+                        }
+                    >
+                        {alertMessage}
+                    </Alert>
+                </Collapse>
+                <div
+                    style={{
+                        border: isDragging ? '2px dashed #007bff' : '2px dashed #ccc',
+                        padding: '40px',
+                        textAlign: 'center',
+                        cursor: 'pointer',
+                        minHeight: '200px'
+                    }}
+                    onDragEnter={handleDragEnter}
+                    onDragLeave={handleDragLeave}
+                    onDragOver={(e) => e.preventDefault()}
+                    onDrop={handleDrop}
                 >
-                    {alertMessage}
-                </Alert>
-            </Collapse>
-            <div
-                style={{
-                    border: isDragging ? '2px dashed #007bff' : '2px dashed #ccc',
-                    padding: '40px',
-                    textAlign: 'center',
-                    cursor: 'pointer',
-                    minHeight: '200px'
-                }}
-                onDragEnter={handleDragEnter}
-                onDragLeave={handleDragLeave}
-                onDragOver={(e) => e.preventDefault()}
-                onDrop={handleDrop}
-            >
-                <Typography variant="h4" sx={{ mb: 2 }}>
-                    <strong>File Input</strong>
-                </Typography>
-                <Typography variant="body2">Drag and drop files here or click to upload</Typography>
-                <Typography variant="body2" sx={{ mt: 1 }}>
-                    Please upload a CSV file containing columns: &apos;<strong>CAS</strong>&apos; and &apos;<strong>Species</strong>&apos;.
-                </Typography>
-                <Typography variant="body2" sx={{ mt: 1 }}>
-                    Maximum Limit on Number of rows: <strong>35</strong>
-                </Typography>
+                    <Typography variant="h4" sx={{ mb: 2 }}>
+                        <strong>File Input</strong>
+                    </Typography>
+                    <Typography variant="body2">Drag and drop files here or click to upload</Typography>
+                    <Typography variant="body2" sx={{ mt: 1 }}>
+                        Please upload a CSV file containing columns: &apos;<strong>CAS</strong>&apos; and &apos;<strong>Species</strong>
+                        &apos;.
+                    </Typography>
+                    <Typography variant="body2" sx={{ mt: 1 }}>
+                        Maximum Limit on Number of rows: <strong>35</strong>
+                    </Typography>
 
-                {/* Choose Files button */}
-                <Box marginTop="16px">
-                    <Button variant="contained" component="label">
-                        Choose Files
-                        <input
-                            type="file"
-                            accept=".csv" // Specify the .csv file extension
-                            style={{ display: 'none' }}
-                            onChange={handleFileInputChange}
-                        />
-                    </Button>
-                </Box>
-
-                {selectedFile && !uploading && !uploadComplete && (
+                    {/* Choose Files button */}
                     <Box marginTop="16px">
-                        <Typography variant="subtitle1">Selected File: {selectedFile.name}</Typography>
-                        <Button variant="contained" color="primary" onClick={handleUpload}>
-                            Upload
+                        <Button variant="contained" component="label">
+                            Choose Files
+                            <input
+                                type="file"
+                                accept=".csv" // Specify the .csv file extension
+                                style={{ display: 'none' }}
+                                onChange={handleFileInputChange}
+                            />
                         </Button>
                     </Box>
-                )}
 
-                {/* Reset Button - Visible once a file is selected */}
-                {selectedFile && (
-                    <Box mt={2}>
-                        <Button variant="outlined" color="secondary" onClick={handleReset}>
-                            Reset
-                        </Button>
-                    </Box>
-                )}
+                    {selectedFile && !uploading && !uploadComplete && (
+                        <Box marginTop="16px">
+                            <Typography variant="subtitle1">Selected File: {selectedFile.name}</Typography>
+                            <Button variant="contained" color="primary" onClick={handleUpload}>
+                                Upload
+                            </Button>
+                        </Box>
+                    )}
 
-                {uploading && (
-                    <Box marginTop="16px">
-                        <CircularProgress size={24} color="primary" />
-                        <Typography variant="subtitle1" sx={{ marginLeft: 2 }}>
-                            Uploading...
-                        </Typography>
-                    </Box>
-                )}
+                    {/* Reset Button - Visible once a file is selected */}
+                    {selectedFile && (
+                        <Box mt={2}>
+                            <Button variant="outlined" color="secondary" onClick={handleReset}>
+                                Reset
+                            </Button>
+                        </Box>
+                    )}
 
-                {uploadComplete && !loading && parsedData && (
-                    <Box marginTop="16px">
-                        <CheckCircleOutlineIcon sx={{ color: 'green', marginRight: 1 }} />
-                        <Typography variant="subtitle1">Upload Complete</Typography>
-                    </Box>
-                )}
+                    {uploading && (
+                        <Box marginTop="16px">
+                            <CircularProgress size={24} color="primary" />
+                            <Typography variant="subtitle1" sx={{ marginLeft: 2 }}>
+                                Uploading...
+                            </Typography>
+                        </Box>
+                    )}
 
-                {/* Display the countdown timer */}
-                {countdown > 0 && (
-                    <Box mt={2}>
-                        <Typography variant="body2"> Estimated processing time: {countdown} seconds </Typography>
-                    </Box>
-                )}
+                    {uploadComplete && !loading && parsedData && (
+                        <Box marginTop="16px">
+                            <CheckCircleOutlineIcon sx={{ color: 'green', marginRight: 1 }} />
+                            <Typography variant="subtitle1">Upload Complete</Typography>
+                        </Box>
+                    )}
 
-                {loading && (
-                    <Box marginTop="16px">
-                        <CircularProgress size={24} color="primary" />
-                        <Typography variant="subtitle1" sx={{ marginLeft: 2 }}>
-                            Loading...
-                        </Typography>
-                    </Box>
-                )}
+                    {/* Display the countdown timer */}
+                    {countdown > 0 && (
+                        <Box mt={2}>
+                            <Typography variant="body2"> Estimated processing time: {countdown} seconds </Typography>
+                        </Box>
+                    )}
 
-                {!loading && tableData.length > 0 && (
-                    <Box marginTop="16px">
-                        <Typography variant="h6">Predicted Data:</Typography>
-                        <TableContainer component={Paper}>
-                            <Table>
-                                <TableHead>
-                                    <TableRow>
-                                        <TableCell>CAS</TableCell>
-                                        <TableCell>Species</TableCell>
-                                        <TableCell>Half-Life Value</TableCell>
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    {tableData.map((subArray, index) =>
-                                        subArray.map((data, subIndex) => (
-                                            <TableRow key={subIndex}>
-                                                <TableCell>{data.CAS}</TableCell>
-                                                <TableCell>{data.Species}</TableCell>
-                                                <TableCell>{data.LambdaZHl}</TableCell>
-                                            </TableRow>
-                                        ))
-                                    )}
-                                </TableBody>
-                            </Table>
-                        </TableContainer>
-                    </Box>
-                )}
+                    {loading && (
+                        <Box marginTop="16px">
+                            <CircularProgress size={24} color="primary" />
+                            <Typography variant="subtitle1" sx={{ marginLeft: 2 }}>
+                                Loading...
+                            </Typography>
+                        </Box>
+                    )}
 
-                {/* {parsedData && (
+                    {!loading && tableData.length > 0 && (
+                        <Box marginTop="16px">
+                            <Typography variant="h6">Predicted Data:</Typography>
+                            <TableContainer component={Paper}>
+                                <Table>
+                                    <TableHead>
+                                        <TableRow>
+                                            <TableCell>CAS</TableCell>
+                                            <TableCell>Species</TableCell>
+                                            <TableCell>Half-Life Value</TableCell>
+                                        </TableRow>
+                                    </TableHead>
+                                    <TableBody>
+                                        {tableData.map((subArray, index) =>
+                                            subArray.map((data, subIndex) => (
+                                                <TableRow key={subIndex}>
+                                                    <TableCell>{data.CAS}</TableCell>
+                                                    <TableCell>{data.Species}</TableCell>
+                                                    <TableCell>{data.LambdaZHl}</TableCell>
+                                                </TableRow>
+                                            ))
+                                        )}
+                                    </TableBody>
+                                </Table>
+                            </TableContainer>
+                        </Box>
+                    )}
+
+                    {/* {parsedData && (
                     <Box marginTop="16px">
                         <Typography variant="h6">Parsed Data:</Typography>
                         <pre>{JSON.stringify(parsedData, null, 2)}</pre>
                     </Box>
                 )} */}
-            </div>
-        </MainCard>
+                </div>
+            </MainCard>
+        </ChakraProvider>
     );
 };
 

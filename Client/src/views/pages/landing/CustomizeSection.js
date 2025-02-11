@@ -21,7 +21,13 @@ const CustomizeSection = () => {
         padding: '10px 0',
         fontSize: '1rem',
         color: theme.palette.grey[900],
-        svg: { color: theme.palette.secondary.main }
+        svg: {
+            color: theme.palette.secondary.main,
+            width: '20px', // Fixed width
+            height: '20px', // Fixed height
+            minWidth: '20px', // Ensure minimum width is respected
+            minHeight: '20px' // Ensure minimum height is respected
+        }
     };
 
     return (
@@ -55,16 +61,20 @@ const CustomizeSection = () => {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Typography sx={listSX}>
-                                            <IconCircleCheck size={26} />
+                                            <IconCircleCheck />
                                             Microplastics and nanoplastics exhibit various physiological characteristics.
                                         </Typography>
                                         <Typography sx={listSX}>
-                                            <IconCircleCheck size={31} />
-                                            Explore the features in the established physiologically based toxicokinetic (PBTK) model. The user-friendly environment gives you the flexibility to build it all with sufficient exposure information.
+                                            <IconCircleCheck />
+                                            Explore the features in the established physiologically based toxicokinetic (PBTK) model. The
+                                            user-friendly environment gives you the flexibility to build it all with sufficient exposure
+                                            information.
                                         </Typography>
                                         <Typography sx={listSX}>
-                                            <IconCircleCheck size={36} />
-                                            This interface aims to offer a reliable, powerful, and easy-to-understand simulation tool for predicting the time-varying profiles for MPs/NPs in reticuloendothelial (RES) organs of mice following oral administration.
+                                            <IconCircleCheck />
+                                            This interface aims to offer a reliable, powerful, and easy-to-understand simulation tool for
+                                            predicting the time-varying profiles for MPs/NPs in reticuloendothelial (RES) organs of mice
+                                            following oral administration.
                                         </Typography>
                                     </Grid>
                                 </Grid>

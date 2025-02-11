@@ -71,7 +71,7 @@ const AppBar = ({ ...others }) => {
                 <Container>
                     <Toolbar sx={{ py: 2.5, px: `0 !important` }}>
                         <Typography component="div" sx={{ flexGrow: 1, textAlign: 'left' }}>
-                            <Logo/>
+                            <Logo />
                         </Typography>
                         <Stack direction="row" sx={{ display: { xs: 'none', sm: 'block' } }} spacing={{ xs: 1.5, md: 2.5 }}>
                             <Button color="inherit" component={Link} href="#">
@@ -82,7 +82,7 @@ const AppBar = ({ ...others }) => {
                             </Button> */}
                             <Button
                                 component={RouterLink}
-                                to="/dashboard/single-input"
+                                to="/dashboard/simulation"
                                 disableElevation
                                 variant="contained"
                                 color="secondary"
@@ -92,7 +92,7 @@ const AppBar = ({ ...others }) => {
                             <Button
                                 color="inherit"
                                 component={Link}
-                                href="https://drive.google.com/file/d/1TBoz2113X_NGNB-N-02GvPKtEbvkAIku/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1y7NIatIh7YsZWxMJtbcfRBFUwZcJh9fO/view?usp=sharing"
                                 target="_blank"
                             >
                                 Tutorial
@@ -122,7 +122,7 @@ const AppBar = ({ ...others }) => {
                                                     <ListItemText primary="Home" />
                                                 </ListItemButton>
                                             </Link>
-                                            <Link style={{ textDecoration: 'none' }} href="/dashboard/single-input" target="_blank">
+                                            <Link style={{ textDecoration: 'none' }} href="/dashboard/simulation" target="_blank">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
                                                         <IconDashboard />

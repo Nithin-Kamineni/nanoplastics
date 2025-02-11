@@ -12,6 +12,7 @@ import { store, persister } from 'store';
 import * as serviceWorker from 'serviceWorker';
 import reportWebVitals from 'reportWebVitals';
 import { ConfigProvider } from 'contexts/ConfigContext';
+import { ParamProvider } from 'contexts/ParametersContext';
 
 // style + assets
 import 'assets/scss/style.scss';
@@ -22,13 +23,15 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
     <Provider store={store}>
-            <PersistGate loading={null} persistor={persister}>
-                <ConfigProvider>
+        <PersistGate loading={null} persistor={persister}>
+            <ConfigProvider>
+                <ParamProvider>
                     <BrowserRouter basename={BASE_PATH}>
                         <App />
                     </BrowserRouter>
-                </ConfigProvider>
-            </PersistGate>
+                </ParamProvider>
+            </ConfigProvider>
+        </PersistGate>
     </Provider>
 );
 

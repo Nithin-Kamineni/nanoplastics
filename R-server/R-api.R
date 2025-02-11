@@ -54,7 +54,7 @@ BVBR   : 0.03      : % of VLS, Fraction of blood volume in brain ; Brown et al.,
 BVR    : 0.04      : % of VR,  Fraction of blood volume in rest of body; Brown et al., 1997, Assumed the same as muscle
 
 // #+ Partition coefficient
-PLu    : 0.15      : Unitless, Partition coefficient of Lung     ; Lin et al., 2016
+PLu    : 0.15      : Unitless, Partition coefficient of Lung     ; Lin et al., 2016, Table 1, 100 nm
 PGI    : 0.15      : Unitless, Partition coefficient of GI       ; Lin et al., 2016
 PL     : 0.08      : Unitless, Partition coefficient of Liver    ; Lin et al., 2016
 PK     : 0.15      : Unitless, Partition coefficient of Kidney   ; Lin et al., 2016
@@ -63,7 +63,7 @@ PBR    : 0.15      : Unitless, Partition coefficient of Brain    ; Lin et al., 2
 PR     : 0.15      : Unitless, Partition coefficient of Rest of body; Lin et al., 2016
 
 // #+ Membrane-limited permeability
-PALuC  : 0.001     : Unitless, Membrane-limited permeability coefficient of Lung         ; Lin et al., 2016
+PALuC  : 0.001     : Unitless, Membrane-limited permeability coefficient of Lung         ; Lin et al., 2016, Table 1, 100 nm
 PAGIC  : 0.001     : Unitless, Membrane-limited permeability coefficient of GI           ; Lin et al., 2016
 PALC   : 0.001     : Unitless, Membrane-limited permeability coefficient of Liver        ; Lin et al., 2016
 PAKC   : 0.001     : Unitless, Membrane-limited permeability coefficient of Kidney       ; Lin et al., 2016 
@@ -72,38 +72,30 @@ PABRC  : 0.000001  : Unitless, Membrane-limited permeability coefficient of Brai
 PARC   : 0.000001  : Unitless, Membrane-limited permeability coefficient of Rest of body ; Lin et al., 2016
 
 // #+ Endocytic parameters in spleen; Chou et al., 2023_Table S2
-KSRESrelease       : 0.09     : 1/h,      Release rate constant of phagocytic cells
-KSRESmax           : 10       : 1/h,      Maximum uptake rate constant of phagocytic cells
-KSRES50            : 24       : h,        Time reaching half maximum uptake rate
-KSRESn             : 0.5      : Unitless, Hill coefficient, (unitless)
-ASREScap           : 150      : ug/g,     tissue, Uptake capacity per tissue weight
+KSRESrelease       : 0.003    : 1/h,      Release rate constant of phagocytic cells; Lin et al., 2016
+KSRESmax           : 10       : 1/h,      Maximum uptake rate constant of phagocytic cells; Lin et al., 2016
+ASREScap           : 200      : ug/g,     tissue, Uptake capacity per tissue weight
 
 // #+ Endocytic parameters in lung
-KLuRESrelease     : 0.002    : 1/h,      Release rate constant of phagocytic cells
-KLuRESmax         : 0.01     : 1/h,      Maximum uptake rate constant of phagocytic cells
-KLuRES50          : 48       : h,        Time reaching half maximum uptake rate
-KLuRESn           : 5        : Unitless, Hill coefficient, (unitless)
-ALuREScap         : 89       : ug/g,     tissue, Uptake capacity per tissue weight
+KLuRESrelease     : 0.005     : 1/h,      Release rate constant of phagocytic cells; Lin et al., 2016
+KLuRESmax         : 0.1       : 1/h,      Maximum uptake rate constant of phagocytic cells; Lin et al., 2016
+ALuREScap         : 15        : ug/g,     tissue, Uptake capacity per tissue weight
 
 // #+ Endocytic parameters in kidney
-KKRESrelease       : 0.0075   : 1/h,      Release rate constant of phagocytic cells
-KKRESmax           : 0.5      : 1/h,      Maximum uptake rate constant of phagocytic cells
-KKRES50            : 24       : h,        Time reaching half maximum uptake rate
-KKRESn             : 0.5      : Unitless, Hill coefficient, (unitless)
-AKREScap           : 330      : ug/g,     tissue, Uptake capacity per tissue weight
+KKRESrelease       : 0.01     : 1/h,      Release rate constant of phagocytic cells; Lin et al., 2016
+KKRESmax           : 0.1      : 1/h,      Maximum uptake rate constant of phagocytic cells; Lin et al., 2016
+AKREScap           : 15       : ug/g,     tissue, Uptake capacity per tissue weight
 
 // #+ Endocytic parameters in liver
-KLRESrelease       : 0.02     : 1/h,      Release rate constant of phagocytic cells 
-KLRESmax           : 20       : 1/h,      Maximum uptake rate constant of phagocytic cells
-KLRES50            : 24       : h,        Time reaching half maximum uptake rate
-KLRESn             : 0.5      : Unitless, Hill coefficient, (unitless)
-ALREScap           : 195      : ug/g,     tissue, Uptake capacity per tissue weight 
+KLRESrelease       : 0.0075   : 1/h,      Release rate constant of phagocytic cells; Lin et al., 2016 
+KLRESmax           : 4        : 1/h,      Maximum uptake rate constant of phagocytic cells; Lin et al., 2016
+ALREScap           : 100      : ug/g,     tissue, Uptake capacity per tissue weight 
 
 // #+ Uptake and elimination parameters
-KGIb               : 5.41e-3  : 1/h, Absorption rate of GI tract
-Kfeces             : 0.141    : 1/h, Fecal clearance
-KbileC             : 0.00003  : L/h/kg^0.75, Biliary clearance
-KurineC            : 0.00003  : L/h/kg^0.75, Urinary clearance
+KGIb               : 6e-5      : 1/h, Absorption rate of GI tract
+Kfeces             : 0.53      : 1/h, Fecal clearance
+KbileC             : 0.0012    : L/h/kg^0.75, Biliary clearance; Lin et al., 2016
+KurineC            : 0.00012   : L/h/kg^0.75, Urinary clearance; Lin et al., 2016
 
 // #+ Albumin-binding parameters
 KD                 : 206.15    : mg/L, Equilibrium dissociation constant      ; Anozie et al., 2020
@@ -331,23 +323,22 @@ capture AUC_BR    = AUCBR;
 '
 
 
+
+
 ## Build mrgsolve-based PBPK Model
 mod <- mcode ("MPsPBPK.code", PBPK.code)
 
-print("phase 0 starting ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 ## Input data set for model calibration/ oral
 # script_dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 # Set the working directory to the script's directory
 # setwd(script_dir)
 
-print("phase 1 starting ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 ######################################################################################################
 Obs.KB220 <-read.csv("input data/KB220.csv")      # KB220 dataset: matrix: Blood (Unit: mg/kg)/Keinänen et al. (2021) 
 names(Obs.KB220) = c("Time", "CBlood")
 
-print("phase 2 starting ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 Obs.KLu220 <-read.csv(file="input data/KLu220.csv")    # KLu220 dataset: matrix: Lung (Unit: mg/kg)/Keinänen et al. (2021) 
 names(Obs.KLu220) = c("Time", "CLung")
@@ -430,12 +421,10 @@ names(Obs.KU1) = c("Time", "AUrine")
 Obs.KGI1 <-read.csv(file="input data/KGI1.csv")    # KGI1 dataset: matrix: GI tract (Unit: mg)/Keinänen et al. (2021) 
 names(Obs.KGI1) = c("Time", "CGI")
 
-print("phase 3 starting ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-
 ######################################################################################
 # Define the prediction function
 ## Define the prediction function (for least squares fit using levenberg-marquart algorithm)
-pred <- function(pars, parDuration, parTreatment, parExposure) {
+pred <- function(pars, parDuration, parTreatment, parExposure, parBW) {
   
   ## Get out of log domain
   pars %<>% lapply(exp)                 ## return a list of exp (parameters) from log domain
@@ -446,13 +435,15 @@ pred <- function(pars, parDuration, parTreatment, parExposure) {
   
   ## Exposure scenario for Single dose at 0.1 mg
   TDOSE.K       = parTreatment      # Dosing frequency during exposure time
-  DOSEoral.K    = parExposure   # mg
+  BW            = parBW   # Body weight, kg
+  Concen.K      = parExposure      # Exposure concentration, mg/kg
+  DOSEoral.K    =  Concen.K*BW  # mg
   ## Oral exposure route
   ex.K <- ev(ID = 1, amt = DOSEoral.K, ii = tinterval, addl = TDOSE.K-1, 
              cmt = "ALumen", replicate = FALSE) 
   
   ## set up the exposure time
-  tsamp.K  = tgrid(0, tinterval*(TDOSE.K-1) + tinterval*End_time, 0.1)
+  tsamp.K  = tgrid(0, tinterval*(TDOSE.K-1) + tinterval*End_time, 0.2)
   
   ## Get a prediction
   out.K <- 
@@ -547,17 +538,17 @@ function(req) {
   
   ## Cost function (FME) 
   ## Estimate the model residual by modCost function
-  MCcost<-function (pars){
-    out <- pred (pars)
-    cost<- modCost  (model=out$out.K, obs= Obs.KS220, x="Time")
-    cost<- modCost  (model=out$out.K, obs= Obs.KK220, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KU220, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KB220, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KL220, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KLu220, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KGI220, x="Time", cost=cost)
-    return(cost)
-  }
+  # MCcost<-function (pars){
+  #   out <- pred (pars)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KS220, x="Time")
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KK220, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KU220, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KB220, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KL220, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KLu220, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KGI220, x="Time", cost=cost)
+  #   return(cost)
+  # }
   
   # parDuration = parDuration,
   # parTreatment = parTreatment,
@@ -568,39 +559,39 @@ function(req) {
   theta.final <- log(c(
     BW     = parBW,       # Body weight
     PLu    = 0.15,       # Partition coefficient     
-    PL     = 0.0001,
-    PK     = 0.155,
+    PL     = 0.0001,     # Adjusted
+    PK     = 0.251,      # Fitted  
     PS     = 0.15,
     PGI    = 0.15,
     PBR    = 0.15,
     PR     = 0.15,
     PALuC  = 0.001,      # Membrane-limited permeability coefficient 
     PAGIC  = 0.001,
-    PALC   = 0.0001,
-    PAKC   = 0.01,
-    PASC   = 0.002712,
+    PALC   = 0.0001,     # Adjusted
+    PAKC   = 0.001,       
+    PASC   = 0.00249,    # Fitted   
     PABRC  = 0.000001,
-    PARC   = 0.006863,
-    KSRESrelease  = 0.004523,    #Release rate constant of phagocytic cells
-    KLuRESrelease = 0.002,
-    KKRESrelease  = 0.018,
-    KLRESrelease  = 0.02,
-    KSRESmax      = 7.21,        #Maximum uptake rate constant of phagocytic cells
-    KLuRESmax     = 0.55, 
-    KKRESmax      = 0.5, 
-    KLRESmax      = 0.00790, 
-    ASREScap      = 150,         #Uptake capacity per tissue weight 
-    ALuREScap     = 89,
-    AKREScap      = 330,
-    ALREScap      = 195,
-    KD            = 2880.663,   
+    PARC   = 0.00224,    # Fitted
+    KSRESrelease  = 0.003,      # Release rate constant of phagocytic cells
+    KLuRESrelease = 0.005,
+    KKRESrelease  = 0.01,
+    KLRESrelease  = 0.0075,
+    KSRESmax      = 10,        # Maximum uptake rate constant of phagocytic cells
+    KLuRESmax     = 0.643,     # Fitted
+    KKRESmax      = 0.291,     # Fitted   # Adjusted (increase)
+    KLRESmax      = 0.00427,   # Fitted  
+    ASREScap      = 200,       #Uptake capacity per tissue weight 
+    ALuREScap     = 15,
+    AKREScap      = 15,
+    ALREScap      = 100,
+    KD            = 2464.7,    # Fitted  
     N             = 1,
-    KGIb          = 4.052e-5,    #Absorption rate of GI tract (1/h)
-    KbileC        = 0.00003,     #Biliary clearance (L/h/kg^0.75)
-    Kfeces        = 0.535,       #Fecal clearance (L/h)
-    KurineC       = 0.000309     #Urinary clearance (L/h/kg^0.75)
+    KGIb          = 4.22e-5,   # Fitted  # Absorption rate of GI tract (1/h)
+    Kfeces        = 0.55,      # Fitted  # Fecal clearance (L/h)
+    KbileC        = 0.0012,    # Biliary clearance (L/h/kg^0.75)
+    KurineC       = 0.0003     # Fitted  # Urinary clearance (L/h/kg^0.75)
   ))
-  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration)$out.K
+  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration, parBW)$out.K
   
   
   ## Calibration results
@@ -687,55 +678,55 @@ function(req) {
   ## Estimate the model residual by modCost function
   ## Cost function (FME) 
   ## Estimate the model residual by modCost function
-  MCcost<-function (pars){
-    out <- pred (pars)
-    cost<- modCost  (model=out$out.K, obs= Obs.KS20, x="Time")
-    cost<- modCost  (model=out$out.K, obs= Obs.KK20, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KU20, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KB20, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KL20, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KLu20, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KGI20, x="Time", cost=cost)
-    return(cost)
-  }
+  # MCcost<-function (pars){
+  #   out <- pred (pars)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KS20, x="Time")
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KK20, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KU20, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KB20, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KL20, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KLu20, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KGI20, x="Time", cost=cost)
+  #   return(cost)
+  # }
   
   #Fitting
   theta.final <- log(c(
-    BW     = 0.02,       # Body weight
+    BW     = parBW,       # Body weight
     PLu    = 0.15,       # Partition coefficient     
-    PL     = 0.0001,
-    PK     = 0.15,
+    PL     = 0.0001,     # Adjusted
+    PK     = 0.374,      # Fitted  
     PS     = 0.15,
     PGI    = 0.15,
     PBR    = 0.15,
     PR     = 0.15,
     PALuC  = 0.001,      # Membrane-limited permeability coefficient 
     PAGIC  = 0.001,
-    PALC   = 0.001,
-    PAKC   = 0.001,
-    PASC   = 0.001,
+    PALC   = 0.0001,     # Adjusted
+    PAKC   = 0.001,       
+    PASC   = 0.001,      
     PABRC  = 0.000001,
-    PARC   = 0.001,
-    KSRESrelease  = 0.09,      # Release rate constant of phagocytic cells
-    KLuRESrelease = 0.002,
-    KKRESrelease  = 0.0075,
-    KLRESrelease  = 0.02,
-    KSRESmax      = 10,        # Maximum uptake rate constant of phagocytic cells
-    KLuRESmax     = 0.09287, 
-    KKRESmax      = 0.2, 
-    KLRESmax      = 0.001, 
-    ASREScap      = 150,       # Uptake capacity per tissue weight 
-    ALuREScap     = 89,
-    AKREScap      = 330,
-    ALREScap      = 195,
-    KD            = 136.15,   
-    N             = 1.3,
-    KGIb          = 4.226e-5,    # Absorption rate of GI tract (1/h)
-    KbileC        = 0.00003,     # Biliary clearance (L/h/kg^0.75)
-    Kfeces        = 0.54765,     # Fecal clearance (L/h)
-    KurineC       = 0.0001       # Urinary clearance (L/h/kg^0.75)
+    PARC   = 0.00695,         # Fitted
+    KSRESrelease  = 0.003,    # Release rate constant of phagocytic cells
+    KLuRESrelease = 0.53,     # Fitted
+    KKRESrelease  = 0.01,       
+    KLRESrelease  = 0.0075,    
+    KSRESmax      = 0.905,    # Fitted # Maximum uptake rate constant of phagocytic cells
+    KLuRESmax     = 0.1,       
+    KKRESmax      = 0.1,       
+    KLRESmax      = 0.001,    # Adjusted
+    ASREScap      = 200,      # Uptake capacity per tissue weight 
+    ALuREScap     = 15,
+    AKREScap      = 15,
+    ALREScap      = 100,
+    KD            = 558.04,   # Fitted
+    N             = 1,
+    KGIb          = 4.23e-5,  # Fitted  # Absorption rate of GI tract (1/h)
+    Kfeces        = 0.548,    # Fitted  # Fecal clearance (L/h)
+    KbileC        = 0.0012,   # Biliary clearance (L/h/kg^0.75)
+    KurineC       = 0.00012   # Urinary clearance (L/h/kg^0.75)
   ))
-  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration)$out.K
+  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration, parBW)$out.K
   
   ## Model calibration plot using ggplot2 
   ## Calibration results of exposure scenario K
@@ -815,55 +806,55 @@ function(req) {
   
   ## Cost function (FME) 
   ## Estimate the model residual by modCost function
-  MCcost<-function (pars){
-    out <- pred (pars)
-    cost<- modCost  (model=out$out.K, obs= Obs.KS6, x="Time")
-    cost<- modCost  (model=out$out.K, obs= Obs.KK6, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KU6, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KL6, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KLu6, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KGI6, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KB6, x="Time", cost=cost)
-    return(cost)
-  }
+  # MCcost<-function (pars){
+  #   out <- pred (pars)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KS6, x="Time")
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KK6, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KU6, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KL6, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KLu6, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KGI6, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KB6, x="Time", cost=cost)
+  #   return(cost)
+  # }
   
   #Fitting
   theta.final <- log(c(
-    BW     = 0.02,       # Body weight
-    PLu    = 0.15,       # Partition coefficient     
-    PL     = 0.0001,
+    BW     = parBW,       # Body weight
+    PLu    = 0.15,        # Partition coefficient     
+    PL     = 0.0001,      # Adjusted
     PK     = 0.15,
     PS     = 0.15,
     PGI    = 0.15,
     PBR    = 0.15,
     PR     = 0.15,
-    PALuC  = 0.001,      # Membrane-limited permeability coefficient 
+    PALuC  = 0.001,       # Membrane-limited permeability coefficient 
     PAGIC  = 0.001,
-    PALC   = 0.0001,
-    PAKC   = 0.00314,
-    PASC   = 0.003117,
+    PALC   = 0.0001,      # Adjusted
+    PAKC   = 0.001,     
+    PASC   = 0.004,       # Fitted 
     PABRC  = 0.000001,
-    PARC   = 0.0045,
-    KSRESrelease  = 0.001,      #Release rate constant of phagocytic cells: all equal to 0.001
-    KLuRESrelease = 0.001,
-    KKRESrelease  = 0.001,
-    KLRESrelease  = 0.001,
-    KSRESmax      = 30.0325,    #Maximum uptake rate constant of phagocytic cells
-    KLuRESmax     = 0.56, 
-    KKRESmax      = 0.71877, 
-    KLRESmax      = 0.006376, 
-    ASREScap      = 150,        #Uptake capacity per tissue weight 
-    ALuREScap     = 89,
-    AKREScap      = 330,
-    ALREScap      = 195,
-    KD            = 3108.786,   
+    PARC   = 0.015,           # Fitted
+    KSRESrelease  = 0.001,    # Adjusted  # Release rate constant of phagocytic cells
+    KLuRESrelease = 0.001,    # Adjusted
+    KKRESrelease  = 0.01,
+    KLRESrelease  = 0.0075,
+    KSRESmax      = 29.91,    # Fitted    # Maximum uptake rate constant of phagocytic cells
+    KKRESmax      = 1.87,     # Fitted
+    KLuRESmax     = 0.445,    # Fitted
+    KLRESmax      = 0.00402,  # Fitted
+    ASREScap      = 200,      # Uptake capacity per tissue weight 
+    ALuREScap     = 15,
+    AKREScap      = 15,
+    ALREScap      = 100,
+    KD            = 4468.93,  # Fitted
     N             = 1,
-    KGIb          = 5.099e-5,    #Absorption rate of GI tract (1/h)
-    KbileC        = 0.00003,     #Biliary clearance (L/h/kg^0.75)
-    Kfeces        = 0.50814,     #Fecal clearance (L/h)
-    KurineC       = 0.000328     #Urinary clearance (L/h/kg^0.75)
+    KGIb          = 4.01e-5,  # Fitted  # Adjusted (decrease) #Absorption rate of GI tract (1/h)
+    Kfeces        = 0.508,    # Fitted  # Fecal clearance (L/h)
+    KbileC        = 0.0012,   # Biliary clearance (L/h/kg^0.75)
+    KurineC       = 0.000429  # Fitted  # Urinary clearance (L/h/kg^0.75)
   ))
-  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration)$out.K         ## Simulation of exposure scenario K
+  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration, parBW)$out.K         ## Simulation of exposure scenario K
   
   ## Model calibration results
   df.simKS  = cbind.data.frame (Time=Sim.fitK$Time, CSpleen=Sim.fitK$CSpleen)
@@ -943,55 +934,55 @@ function(req) {
   
   ## Cost function (FME) 
   ## Estimate the model residual by modCost function
-  MCcost<-function (pars){
-    out <- pred (pars)
-    cost<- modCost  (model=out$out.K, obs= Obs.KS1, x="Time")
-    cost<- modCost  (model=out$out.K, obs= Obs.KK1, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KU1, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KB1, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KL1, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KLu1, x="Time", cost=cost)
-    cost<- modCost  (model=out$out.K, obs= Obs.KGI1, x="Time", cost=cost)
-    return(cost)
-  }
+  # MCcost<-function (pars){
+  #   out <- pred (pars)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KS1, x="Time")
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KK1, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KU1, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KB1, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KL1, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KLu1, x="Time", cost=cost)
+  #   cost<- modCost  (model=out$out.K, obs= Obs.KGI1, x="Time", cost=cost)
+  #   return(cost)
+  # }
   
   #Fitting
   theta.final <- log(c(
-    BW     = 0.02,       # Body weight
+    BW     = parBW,       # Body weight
     PLu    = 0.15,       # Partition coefficient     
-    PL     = 0.0001,
+    PL     = 0.0001,     # Adjusted
     PK     = 0.15,
     PS     = 0.15,
     PGI    = 0.15,
     PBR    = 0.15,
     PR     = 0.15,
-    PALuC  = 0.001,      # Membrane-limited permeability coefficient 
+    PALuC  = 0.001,         # Membrane-limited permeability coefficient 
     PAGIC  = 0.001,
-    PALC   = 0.0001,
+    PALC   = 0.0001,        # Adjusted
     PAKC   = 0.001,
-    PASC   = 0.00216,
+    PASC   = 0.00319,       # Fitted
     PABRC  = 0.000001,
-    PARC   = 0.004026,
-    KSRESrelease  = 0.002937,    #Release rate constant of phagocytic cells: all equal to 0.001
-    KLuRESrelease = 0.002,
-    KKRESrelease  = 0.0075,
-    KLRESrelease  = 0.02,
-    KSRESmax      = 19.56,       #Maximum uptake rate constant of phagocytic cells
-    KLuRESmax     = 0.30275, 
-    KKRESmax      = 0.5, 
-    KLRESmax      = 0.001, 
-    ASREScap      = 150,         #Uptake capacity per tissue weight 
-    ALuREScap     = 100,
-    AKREScap      = 330,
-    ALREScap      = 195,
-    KD            = 3040.88,   
+    PARC   = 0.00349,         # Fitted
+    KSRESrelease  = 0.003,    # Release rate constant of phagocytic cells
+    KLuRESrelease = 0.005,
+    KKRESrelease  = 0.01,
+    KLRESrelease  = 0.0075,
+    KSRESmax      = 31.03,     # Fitted  #Maximum uptake rate constant of phagocytic cells
+    KLuRESmax     = 0.592,     # Fitted
+    KKRESmax      = 0.964,     # Fitted
+    KLRESmax      = 0.04,      # Adjusted
+    ASREScap      = 200,       # Uptake capacity per tissue weight 
+    ALuREScap     = 15,
+    AKREScap      = 15,
+    ALREScap      = 100,
+    KD            = 4092.26,   # Fitted 
     N             = 1,
-    KGIb          = 4.162e-5,    #Absorption rate of GI tract (1/h)
-    KbileC        = 0.00003,     #Biliary clearance (L/h/kg^0.75)
-    Kfeces        = 0.5045,      #Fecal clearance (L/h)
-    KurineC       = 0.000397     #Urinary clearance (L/h/kg^0.75)
+    KGIb          = 3.42e-5,   # Fitted   # Absorption rate of GI tract (1/h)
+    Kfeces        = 0.5046,    # Fitted   # Fecal clearance (L/h)
+    KbileC        = 0.0012,    # Biliary clearance (L/h/kg^0.75)
+    KurineC       = 0.000564   # Fitted   # Urinary clearance (L/h/kg^0.75)
   ))
-  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration)$out.K
+  Sim.fitK = pred(theta.final, parDuration, parTreatment, parConcentration, parBW)$out.K
   
   ## Model calibration plot using ggplot2 
   ## Calibration results of exposure scenario K

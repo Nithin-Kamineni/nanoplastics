@@ -1,7 +1,11 @@
 {
-    "dashboard": "Dashboard",
+    "dashboard": "--",
     "default": "Default",
     "singleinput": "Dashboard",
+    "modelparameters": "Model Parameters",
+    "outputtable": "Output Table",
+    "modelstructure": "Model Structure",
+    "code": "Code",
     "fileinput": "File input",
     "originaldata": "Original Data",
     "analytics": "Analytics",

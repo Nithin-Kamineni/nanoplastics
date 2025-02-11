@@ -1,13 +1,14 @@
-# start from the rocker/r-ver:4.2.3 image
+# start from the rocker/r-ver:4.3.3 image
 FROM rocker/r-ver:4.3.3
 
 # install the linux libraries needed for plumber
 RUN apt-get update -qq && apt-get install -y \
   libssl-dev \
   libcurl4-gnutls-dev
-
+  
 # install plumber
-RUN R -e "install.packages(c('Rcpp', 'plumber', 'here', 'rstudioapi', 'mrgsolve', 'dplyr', 'zoo', 'ggplot2', 'patchwork', 'FME', 'tidyr', 'Metrics'))"
+RUN R -e "install.packages('Rcpp')"
+# RUN R -e "install.packages(c('Rcpp', 'plumber', 'here', 'rstudioapi', 'mrgsolve', 'dplyr', 'zoo', 'ggplot2', 'patchwork', 'FME', 'tidyr', 'Metrics'))"
 RUN R -e "install.packages('plumber')"
 RUN R -e "install.packages('here')"
 RUN R -e "install.packages('rstudioapi')"
@@ -38,6 +39,8 @@ EXPOSE 9005
 
 # when the container starts, start the main.R script
 ENTRYPOINT ["Rscript", "runapi.R"]
+# ENTRYPOINT ["bash", "-c", "rstudio-server start && Rscript /runapi.R"]
+
 
 # docker build -t nanoplastics-server .
 
